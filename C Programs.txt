@@ -1,0 +1,1693 @@
+1) /* welcome to c program */
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    clrscr();
+    printf("welcome to c");
+}
+
+2)/* Write a c program to print multiple statements in new lines */
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    clrscr();
+    printf("\nI love my country");
+    printf("\nproud to be an indian");
+    printf("\nIndia is the powerful country in the world");
+}
+
+3)/* Write a c program to print multiple statements in new lines with new tab */
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    clrscr();
+    printf("\nI love my country");
+    printf("\n\tproud to be an indian");
+    printf("\n\t\tIndia is the powerful country in the world");
+}
+
+4) /* Write a c program to initialize and print the values*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a=10,b=20;
+    clrscr();
+    printf("A value is %d",a);
+    printf("\nB value is %d",b);
+    printf("\nA value %d\t\tB value %d",a,b);
+}
+
+5) /* Write a c program to swap two numbers using additional variable*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a=10,b=20,c;
+    clrscr();
+    printf("A value before swap %d\t\tB value before swap %d",a,b);
+    c=a;
+    a=b;
+    b=c;
+    printf("\nA value after swap %d\t\tB value after swap %d",a,b);
+}
+
+6) /*Write a c program to swap two numbers with arthimetic operator without using additional variable*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a=10,b=20;
+    clrscr();
+    printf("A value before swap %d\t\tB value before swap %d",a,b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("\nA value after swap %d\t\tB value after swap %d",a,b);
+}
+
+7) /* write a c program to swap two numbers with another way by using arthimetic operator*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a=10,b=20;
+    clrscr();
+    printf("A value before swap %d\t\tB value before swap %d",a,b);
+    a=a*b;
+    b=a/b;
+    a=a/b;
+    printf("\nA value after swap %d\t\tB value after swap %d",a,b);
+}
+
+8) /* Write a c program to swap two numbers without using arthimetic operations and without using additional variable*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a=10,b=20;
+    clrscr();
+    printf("A value before swap %d\t\tB value before swap %d",a,b);
+    a=a^b;
+    b=a^b;
+    a=a^b;
+    printf("\nA value after swap %d\t\tB value after swap %d",a,b);
+}
+
+9) /* Write a c program to perform arthimetic operations*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a=10,b=20;
+    clrscr();
+    printf("Addition of two numbers %d",(a+b));
+    printf("\nSubtraction of two numbers %d",(a-b));
+    printf("\nMultiplication of two numbers %d",(a*b));
+    printf("\nDivision of two numbers %d",(a/b));
+    printf("\nModulus of two numbers %d",(a%b));
+}
+
+10) /* Write a c program to print book details*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+  char bcode[5]="B101";
+  int bno=101;
+  char bname[7]="python";
+  float bprice=456.75;
+  char bpcode='p';
+  clrscr();
+  printf("\n--------------------------------------------");
+  printf("\n\t\t\tBOOK DETAILS");
+  printf("\n--------------------------------------------");
+  printf("\n Code %s",bcode);
+  printf("\n Number %d",bno);
+  printf("\n Book Name %s",bname);
+  printf("\n Price %f",bprice);
+  printf("\n bpcode %c",bpcode);
+  printf("\n--------------------------------------------");
+}
+
+11) /* Declaring a variabe in c program*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+  int age;
+  clrscr();
+  printf("Enter your age..:");
+  scanf("%d",&age);
+  printf("Age you are entered %d",age);
+  
+}
+
+12) /*Write a c program to swap two numbers using declaring variables*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+  int a,b;
+  clrscr();
+  printf("Enter A value..:");
+  scanf("%d",&a);
+  printf("Enter B value..:");
+  scanf("%d",&b);
+  printf("\nValue of A before swap %d\t\tValue of B before swap %d",a,b);
+  a=a+b;
+  b=a-b;
+  a=a-b;
+  printf("\nValue of A after swap %d\t\tValue of B after swap %d",a,b);
+
+}
+
+
+13) /* Write a c program for arthimetic operators using declarathion of variable*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a,b,c;
+    clrscr();
+    printf("enter A value....:");
+    scanf("%d",&a);
+    printf("enter b value....:");
+    scanf("%d",&b);
+    c=a+b;
+    printf("\naddition is %d",c);
+    c=a-b;
+    printf("\nnsub is %d",c);
+    c=a*b;
+    printf("\nmuli is %d",c);
+    c=a/b;
+    printf("\ndiv is %d",c);
+    c=a%b;
+    printf("\nmod is %d",c);
+}
+
+
+14) /* Write a c program to calculate area of a rectangel*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int l,b,a;
+    clrscr();
+    printf("enter the length of the rectangle..:");
+    scanf("%d",&l);
+    printf("enter the breadth of the rectangle..:");
+    scanf("%d",&b);
+    a=l*b;
+    printf("The area of rectangle is..: %d",a);
+}
+
+15) /* Write a c program to calculate area of a circle*/
+
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+main()
+{
+    int r;
+    float c,a;
+    clrscr();
+    printf("enter the radius of a circle..:");
+    scanf("%d",&r);
+    c=2*M_PI*r;
+    printf("\nCircumference of a circle is...: %f",c);
+    a=M_PI*r*r;
+    printf("\narea of a circle ......: %f",a);
+}
+
+16)/* C program for simple intrest*/
+
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+main()
+{
+   float si,p,t,r;
+   clrscr();
+   printf("enter principle amount :");
+   scanf("%f",&p);
+   printf("enter the time :");
+   scanf("%f",&t);
+   printf("intrest rate :");
+   scanf("%f",&r);
+   si=p*t*r/100;
+   printf("simple intrest is :%f",si);
+}
+
+17) /*Write a c program to find compound intrest*/
+
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+main()
+{
+ float p,t,r,ci;
+ printf("enter principle amount..:");
+ scanf("%f",&p);
+ printf("enter time..:");
+ scanf("%f",&t);
+ printf("Intrest rate..:");
+ scanf("%f",&r);
+ ci=p*pow((1+r/100),t);
+ printf("Compound intrest is ...:%0.2f",ci);
+}
+
+18) /* Write a c program to calculate fahrenheit to celcius*/
+
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+main()
+{
+ float ci,f;
+ clrscr();
+ printf("enter the temperature in fahrenheit..:");
+ scanf("%f",&f);
+ ci=(f-32)*5/9;
+ printf("celcius..%0.2f",ci);
+}
+
+19) /* Write a c program to calculate  celcius to fahrenheit*/
+
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+main()
+{
+ float ci,f;
+ clrscr();
+ printf("enter the temperature in celcius ..:");
+ scanf("%f",&ci);
+ f=(ci*9/5)+32;
+ printf("fahrenheit..%0.2f",f);
+}
+
+20) /*Write a c program to calculate student marks total and avg marks report*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int sno,sclass,m1,m2,m3,m4,m5,m6,tot;
+    float avg;
+    char sname[20],ssec[3];
+    clrscr();
+    printf("Enter sno..:");
+    scanf("%d",&sno);
+    
+    printf("Enter sname..:");
+    scanf("%s",&sname);
+    
+    printf("Enter sclass..:");
+    scanf("%d",&sclass);
+    
+    printf("Enter ssec..:");
+    scanf("%s",&ssec);
+    
+    printf("Enter M1..:");
+    scanf("%d",&m1);
+    
+    printf("Enter M2..:");
+    scanf("%d",&m2);
+    
+    printf("Enter M3..:");
+    scanf("%d",&m3);
+    
+    printf("Enter M4..:");
+    scanf("%d",&m4);
+    
+    printf("Enter M5..:");
+    scanf("%d",&m5);
+    
+    printf("Enter M6..:");
+    scanf("%d",&m6);
+    
+    tot=m1+m2+m3+m4+m5+m6;
+    avg=tot/6;
+    
+    printf("\n------------------------------------");
+    printf("\n\t\t Student marks report");
+    printf("\n------------------------------------");
+    printf("\n sno %d\tsname %s",sno,sname);
+    printf("\n sclass %d\tssec %s",sclass,ssec);
+    printf("\n------------------------------------");
+    printf("\nM1 %d\tM2 %d\tM3 %d",m1,m2,m3);
+    printf("\nM4, %d\tM5 %d\tM6 %d",m4,m5,m6);
+    printf("\n------------------------------------");
+    printf("\nTotal marks..:%d",tot);
+    printf("\nAVerage marks...:%0.2f",avg);
+    printf("\n------------------------------------");
+    if(tot<209)
+    {
+        printf("\nfail");
+    }
+    else
+    {
+        printf("\npass");
+    }
+    
+    
+}
+
+21) /*Write a c program to check the biggest number among two numbers using if condition*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a,b;
+    clrscr();
+    printf("Enter A value..:");
+    scanf("%d",&a);
+    printf("Enter B value..:");
+    scanf("%d",&b);
+    if(a>b)
+    {
+        printf("A is big");
+    }
+}
+
+22) /*Write a c program to check the biggest number among two numbers if else condition*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a,b;
+    clrscr();
+    printf("Enter A value..:");
+    scanf("%d",&a);
+    printf("Enter B value..:");
+    scanf("%d",&b);
+    if(a>b)
+    {
+        printf("A is big");
+    }
+    else
+    {
+        printf("B is big");
+    }
+}
+
+
+23) /*Write a c program to check the biggest number among two numbers  else if condition*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a,b;
+    clrscr();
+    printf("Enter A value..:");
+    scanf("%d",&a);
+    printf("Enter B value..:");
+    scanf("%d",&b);
+    if(a>b)
+    {
+        printf("A is big");
+    }
+    else if(a<b)
+    {
+        printf("B is big");
+    }
+    
+}
+
+24) /*Write a c program to check the biggest number among two numbers  else if ladder condition*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a,b;
+    clrscr();
+    printf("Enter A value..:");
+    scanf("%d",&a);
+    printf("Enter B value..:");
+    scanf("%d",&b);
+    if(a>b)
+    {
+        printf("\nA is big");
+    }
+    else if(a<b)
+    {
+        printf("\nB is big");
+    }
+    else if(a==b)
+    {
+        printf("\nBoth are equal");
+    }
+    
+}
+
+
+25) /*Write a c program to check the biggest number among two numbers  nested if ladder condition*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int x;
+    clrscr();
+    printf("Enter x value..:");
+    scanf("%d",&x);
+    if(x>=0)
+    if(x==0)
+    {
+        printf("Zero");
+    }
+    else
+    {
+        printf("Positive Number");
+    }
+    else
+    {
+        printf("Negitive Number");
+    }
+    
+    
+}
+
+26) /*Write a c program to check the biggest number among two numbers  using terenary and conditional operator*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a,b;
+    clrscr();
+    printf("Enter a value..:");
+    scanf("%d",&a);
+    printf("Enter B value..:");
+    scanf("%d",&b);
+    (a>b)?printf("A is big"):printf("B is big");
+    
+    
+}
+
+27) /*Write a c program to check the biggest number among two numbers  using terenary and conditional operator*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a,b,c;
+    clrscr();
+    printf("Enter A value..:");
+    scanf("%d",&a);
+    printf("Enter B value..");
+    scanf("%d",&b);
+    printf("Enter C value..");
+    scanf("%d",&c);
+    (a>b && a>c)?printf("A is Big"):(b>c && b>c)?printf("B is Big"):printf("C is Big");
+}
+
+28) /* Write a c program to check the given year is leep year or not*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int year;
+    clrscr();
+    printf("Enter year..:");
+    scanf("%d",&year);
+    if(year%400==0 && year%100!=0 || year%4==0)
+    {
+        printf("Leap year");
+    }
+    else
+    {
+        printf("Not a Leap year");
+    }
+}
+
+29) /* Write a c program to check the biggest number among some numbers */
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a,b,c,d,e,x;
+    clrscr();
+    printf("Enter A..:");
+    scanf("%d",&a);
+    
+    printf("Enter B..:");
+    scanf("%d",&b);
+    
+    printf("Enter C..:");
+    scanf("%d",&c);
+    
+    printf("Enter D..:");
+    scanf("%d",&d);
+    
+    printf("Enter E..:");
+    scanf("%d",&e);
+    
+    x=a;
+    if(b>x) x=b;
+    if(c>x) x=c;
+    if(d>x) x=d;
+    if(e>x) x=e;
+    printf("%d is big",x);
+     
+    
+}
+
+30) /* Write a c program to check the given age is eligeble for vote or not*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int age;
+    clrscr();
+    printf("Enter your age..:");
+    scanf("%d",&age);
+    if(age>=65)
+    {
+        printf("Senior Citizen");
+        printf("\nEligeble for Vote");
+    }
+    else if(age<65 && age>=18)
+    {
+        printf("Major Citizen");
+        printf("\nEligeble for Vote");
+    }
+    else if(age<18)
+    {
+        printf("Minor Citizen");
+        printf("\n Not Eligeble for Vote");
+    }
+}
+
+
+31) / *Write a c program to check the given number is even or odd by using conditional statement*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int n;
+    clrscr();
+    printf("Enter the value n..:");
+    scanf("%d",&n);
+    if(n%2==0)
+    {
+        printf("Even Number");
+    }
+    else if(n%2==1)
+    {
+        printf("odd number");
+    }
+}
+
+32) /*Write a c program to calculate student marks total and avg marks report with grade and result*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int sno,sclass,m1,m2,m3,m4,m5,m6,tot;
+    float avg;
+    char sname[20],ssec[3];
+    clrscr();
+    printf("Enter sno..:");
+    scanf("%d",&sno);
+    
+    printf("Enter sname..:");
+    scanf("%s",&sname);
+    
+    printf("Enter sclass..:");
+    scanf("%d",&sclass);
+    
+    printf("Enter ssec..:");
+    scanf("%s",&ssec);
+    
+    printf("Enter m1..:");
+    scanf("%d",&m1);
+    
+    printf("Enter m2..:");
+    scanf("%d",&m2);
+    
+    printf("Enter m3..:");
+    scanf("%d",&m3);
+    
+    printf("Enter m4..:");
+    scanf("%d",&m4);
+    
+    printf("Enter m5..:");
+    scanf("%d",&m5);
+    
+    printf("Enter m6..:");
+    scanf("%d",&m6);
+    
+    tot=m1+m2+m3+m4+m5+m6;
+    avg=tot/6;
+    printf("\n--------------------------------");
+    printf("\n\t\tStudent Marks Report");
+    printf("\n--------------------------------");
+    printf("\nsno..:%d\tsname..:%s",sno,sname);
+    printf("\nsclass..:%d\tssec..:%s",sclass,ssec);
+    printf("\n--------------------------------");
+    printf("\nM1 %d\tM2 %d\tM3 %d",m1,m2,m3);
+    printf("\nM4 %d\tM5 %d\tM6 %d",m4,m5,m6);
+    printf("\n--------------------------------");
+    printf("\nTotal Marks..:%d",tot);
+    printf("\nAverage marks..:%0.2f",avg);
+    printf("\n--------------------------------");
+    if(m1<35 || m2<35 || m3<35 || m4<35 || m5<35 || m6<35)
+    {
+        printf("\nResult = Fail");
+        printf("\nGrade..:******");
+    }
+    
+    else if(avg>=65)
+    {
+        printf("\nResult = Pass");
+        printf("\nGrade..:A");
+    }
+    else if(avg<65 && avg>=45)
+    {
+        printf("\nResult = Pass");
+        printf("\nGrade..:B");
+    }
+    else if(avg<45 && avg>=35)
+    {
+        printf("\nResult = Pass");
+        printf("\nGrade..:c");
+    }
+}
+
+33) /*Write a c program to print a statement in 5 times without using loop*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    clrscr();
+    printf("Nipuna Technologies");
+    printf("\nNipuna Technologies");
+    printf("\nNipuna Technologies");
+    printf("\nNipuna Technologies");
+    printf("\nNipuna Technologies");
+}
+
+34) /*Write a c program to print a statement in 5 times with using loop*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1;
+    clrscr();
+    while(i<=5)
+    {
+        printf("\nNipuna Technologies");
+        i=i+1;
+    }
+}
+
+35) /*Write a c program to print 1 to 50 numbers using looping statement*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1;
+    clrscr();
+    while(i<=50)
+    {
+        printf("\n %d",i);  || printf("\t %d",i);
+        i=i+1;
+    }
+}
+
+36) /*Write a c program to print 1 to 5 numbers using looping statement sleep and textcolor*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1;
+    clrscr();
+    while(i<=5)
+    {
+        sleep(2);
+        textcolor(RED);
+        cprintf("\n\n\t %d",i);
+        i=i+1;
+    }
+}
+
+37) /*Write a c program to print 1 to 5 numbers and there count using looping statement*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1,c=0;
+    clrscr();
+    while(i<=5)
+    {
+        printf("\n %3d",i);
+        c=c+1;
+        i=i+1;
+    }
+    printf("\n Count is %d",c);
+}
+
+38) /*Write a c program to print 1 to 5 numbers and there count,sum,avg using looping statement*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1,c=0,s=0;
+    float avg;
+    clrscr();
+    while(i<=5)
+    {
+        printf("\n %3d",i);
+        c=c+1;
+        s=s+i;
+        i=i+1;
+    }
+    avg=s/5;
+    printf("\n Count is %d",c);
+    printf("\n Sum is %d",s);
+    printf("\n Avg is %0.2f",avg);
+}
+
+39) /*Write a c program to print 1 to 10 even numbers using looping statement*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1;
+    clrscr();
+    while(i<=10)
+    {
+        if(i%2==0)
+        {
+            printf("\nEven Number %d",i);
+        }
+        i=i+1;
+    }
+}
+
+40) /*Write a c program to print 1 to 10 even numbers using looping statement*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1;
+    clrscr();
+    while(i<=10)
+    {
+        if(i%2!=0)
+        {
+            printf("\nOdd Number %d",i);
+        }
+        i=i+1;
+    }
+}
+
+41) \ * Write a c program to print statements using while loop*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1;
+    clrscr();
+    while(i<=10)
+    {
+        if(i%2!=0)
+        {
+            printf("\nNipuna");
+        }
+        else
+        {
+            printf("\nVijayawada");
+        }
+        i=i+1;
+    }
+}
+
+42) /* FIZZ BUZZ logic*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1;
+    clrscr();
+    while(i<=16)
+    {
+        if(i%15==0)
+        {
+            printf("\nFIZZ BUZZ");
+        }
+        else if(i%3==0)
+        {
+            printf("\nFIZZ");
+        }
+        else if(i%5==0)
+        {
+            printf("\nBUZZ");
+        }
+        else
+        {
+            printf("\n%d",i);
+        }
+        i=i+1;
+    }
+}
+
+43) /*99 bottle beer song*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=5;
+    clrscr();
+    while(i>=2)
+    {
+        printf("%d bottles of beer on the wall, %d bottles of beer.\n",i,i);
+        printf("Take one down and pass it around, %d bottles of beer on the wall.\n\n",i-1);
+        i=i-1;
+        if(i==1)
+        {
+            printf("1 bottle of beer on the wall, 1 bottle of beer.\n");
+            printf("Take one down and pass it around, no more bottles of beer on the wall.\n\n");
+
+            printf("No more bottles of beer on the wall, no more bottles of beer.\n");
+            printf("Go to the store and buy some more, 99 bottles of beer on the wall.");
+        }
+    
+}
+}
+
+
+44) /*Write a c program to print n natural numbers*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1,n;
+    clrscr();
+    printf("Enter N value..:");
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        printf("%3d",i);
+        i=i+1;
+    }
+}
+
+45) /*Write a c program to print number,square and cube values of given number*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1,n;
+    clrscr();
+    printf("Enter N value..:");
+    scanf("%d",&n);
+    printf("\n--------------------------");
+    printf("\nnumber\tsquare\tcube");
+    while(i<=n)
+    {
+        printf("\n%d\t%d\t%d",i,i*i,i*i*i);
+        i=i+1;
+    }
+    
+
+}
+
+
+46) /*Write a c program to print math tables*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1,n;
+    clrscr();
+    printf("Enter N value..:");
+    scanf("%d",&n);
+    printf("\n--------------------------");
+    while(i<=10)
+    {
+        printf("\n%d*%d=%d",n,i,n*i);
+        i=i+1;
+    }
+    
+
+}
+
+47) /* Write a c program to print n even numbers*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1,n;
+    clrscr();
+    printf("Enter N value..:");
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        if(i%2==0)
+        printf("%3d",i);
+        i=i+1;
+    }
+}
+
+
+48) /* Write a c program to print n odd numbers*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1,n;
+    clrscr();
+    printf("Enter N value..:");
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        if(i%2!=0)
+        printf("%3d",i);
+        i=i+1;
+    }
+}
+
+49) /*Write a c program to print the count of the given number*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1,n,c=0;
+    clrscr();
+    printf("Enter a number..");
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        n=n/10;
+        c=c+1;
+    }
+    printf("\nCount of digits=%d",c);
+}
+
+50) /*write a c program to sum the number of digts in a value*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1,n,s=0,r;
+    clrscr();
+    printf("Enter a number..");
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        r=n%10;
+        s=s+r;
+        n=n/10;
+    }
+    printf("\nsum of digits=%d",s);
+}
+
+51) /*Write a c program to print the given number is armstrong or not*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1,n,s=0,r,t;
+    clrscr();
+    printf("Enter a number..");
+    scanf("%d",&n);
+    t=n;
+    while(i<=n)
+    {
+        r=n%10;
+        s=s+r*r*r;
+        n=n/10;
+    }
+    if(t==s)
+    {
+    printf("\nArmstrong");
+    }
+    else
+    {
+        printf("Not a Armstrong");
+    }
+}
+
+52)/* Write a given program to print the given number as reverse */
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1,n,s=0,r;
+    clrscr();
+    printf("Enter a number..");
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        r=n%10;
+        s=s*10+r;
+        n=n/10;
+    }
+    printf("Reverse Number is..:%d",s);
+}
+
+53) /* Write a c program to print the given number is palindrome or not*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1,n,s=0,r,t;
+    clrscr();
+    printf("Enter a number..");
+    scanf("%d",&n);
+    t=n;
+    while(i<=n)
+    {
+        r=n%10;
+        s=s*10+r;
+        n=n/10;
+    }
+    if(t==s)
+    {
+        printf("Palindrome");
+        
+    }
+    else
+    {
+        printf("not a palindrome");
+    }
+}
+    
+54) /*Write a c program to print numbers using do while loop*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1;
+    clrscr();
+    do{
+        printf("%3d",i);
+        i=i+1;
+    }while(i<=10);
+}
+
+55) /*Write a c program to add two values and add when ever you wan*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a,b,c;
+    char ch;
+    clrscr();
+    do {
+    printf("Enter A value..:");
+    scanf("%d",&a);
+    printf("Enter B value..:");
+    scanf("%d",&b);
+    c=a+b;
+    printf("Sum of two numbers..:%d",c);
+    printf("\nDo you want to add some more numbers Y/N...:");
+    fflush(stdin);
+    ch=getchar();
+    } while(ch=='y' || ch=='Y');
+}
+
+56) /*Write a c program to print numbers*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i;
+    clrscr();
+    for(i=1;i<=10;i++)
+    {
+        printf("%3d",i);
+    }
+}
+
+57) /*Write a c program to print numbers in reverse order using for loop*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i;
+    clrscr();
+    for(i=10;i>=1;i--)
+    {
+        printf("%3d",i);
+    }
+}
+
+58) Write a c program to pint numbers and calculate sum,count and avg using for loop*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1,n,c=0,s=0;
+    float av=0;
+    clrscr();
+    printf("Enter N value..:");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        printf("%3d",i);
+        c=c+1;
+        s=s+i;
+    }
+    av=(float)s/n;
+    printf("\nSum :%d",s);
+    printf("\ncount :%d",c);
+    printf("\navg :%0.1f",av);
+}
+
+59) Write a c program to pint numbers and calculate sum,count and avg using for loop and even sum,count and avg & odd sum,count and avg*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1,n,c=0,s=0,ce=0,se=0,co=0,so=0;
+    float av=0,ave=0,avo=0;
+    clrscr();
+    printf("Enter N value..:");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        printf("%3d",i);
+        c=c+1;
+        s=s+i;
+        if(i%2==0)
+        {
+            ce=ce+1;
+            se=se+i;
+        }
+        else if(i%2!=0)
+        {
+        co=co+1;
+        so=so+i;    
+        }
+    }
+    av=(float)s/n;
+    ave=(float)se/n;
+    avo=(float)so/n;
+    printf("\nSum :%d",s);
+    printf("\ncount :%d",c);
+    printf("\navg :%0.1f",av);
+    printf("\n--------------------------------");
+    printf("\nSum :%d",se);
+    printf("\ncount :%d",ce);
+    printf("\navg :%0.1f",ave);
+    printf("\n--------------------------------");
+    printf("\nSum :%d",so);
+    printf("\ncount :%d",co);
+    printf("\navg :%0.1f",avo);
+    printf("\n--------------------------------");
+}
+
+60) /*Write a c program for factorial of a given number*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i,n,f=1;
+    clrscr();
+    printf("Enter N value..:");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        f=f*i;
+    }
+    printf("fact %d",f);
+}
+
+61) /* Write a c program to print *(star) pattern using nested while loop*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i=1;
+    clrscr();
+    while(i<=5)
+    {
+        int j=1;
+        while(j<=5)
+        {
+            printf("*");
+            j=j+1;
+        }
+        printf("\n");
+        i=i+1;
+    }
+}
+
+62)/* Write a c program to print *(star) pattern using nested for loop*/
+
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i,j;
+    clrscr();
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        printf("*");
+        printf("\n");
+    }
+}
+
+63)/* Write a c program to print numbers pattern using nested for loop*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i,j;
+    clrscr();
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        printf("%d",j);
+        printf("\n");
+    }
+}
+
+64)/* Write a c program to print Alphabets pattern using nested for loop*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    char i,j;
+    clrscr();
+    for(i='A';i<='E';i++)
+    {
+        for(j='A';j<='E';j++)
+        printf("%c",j);
+        printf("\n");
+    }
+}
+
+65)/* Write a c program to print numbers using break*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i;
+    clrscr();
+    for(i=1;i<=20;i++)
+    {
+        if(i>15)
+        break;
+        printf("%d\t",i);
+    }
+}
+
+66)/* Write a c program use continue statements*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i;
+    clrscr();
+    for(i=1;i<=20;i++)
+    {
+        if(i%2==0)
+        continue;
+        printf("\t%d",i);
+    }
+}
+
+67) /*Write a c program use go to & print the given number is even or odd*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i;
+    clrscr();
+    printf("Enter a number..:");
+    scanf("%d",&i);
+    if(i%2==0)
+    {
+        goto evena;
+    }
+    else
+    {
+        goto odda;
+    }
+    evena:
+    printf("\nNumber is even");
+    return;
+    odda:
+    printf("\nNumber is odd");
+}
+
+68) /* Write a C program for switch case*/ **********************************************************************************************************************************
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int i;
+    clrscr();
+    printf("\n--------------------------------------------------");
+    printf("\n\t\t Menu");
+    printf("\n--------------------------------------------------");
+    printf("\n1.Low Speed");
+    printf("\n2.Medium Speed");
+    printf("\n3.High Speed");
+    printf("\n--------------------------------------------------");
+    printf("Enter Any one option: ");
+    scanf("%d",&i);
+    switch(i):
+    {
+        case 1:
+        printf("Low Speed");
+        break;
+        
+        case 2:
+        printf("Medium Speed");
+        break;
+        
+        case 3:
+        printf("High Speed");
+        break;
+        
+        default:
+        printf("Invalid");
+        
+    }
+    
+}
+
+69) /* Write a C program to print all the elements using array*/
+
+70) /* Write a c program to print array elements using for loop*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a[5]={10,20,30,40,50};
+    int i;
+    clrscr();
+    for(i=0;i<5;i++)
+    {
+        printf("%3d",a[i]);
+    }
+}
+
+71) /*  Write a c program to print array elements in reverse using for loop*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a[5]={10,20,30,40,50};
+    int i;
+    clrscr();
+    for(i=4;i>=0;i--)
+    {
+        printf("%3d",a[i]);
+    }
+}
+
+72) /* Write a c program to add all the elements in the array using for loop*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a[5]={10,20,30,40,50};
+    int i,s=0;
+    float av;
+    clrscr();
+    for(i=0;i<5;i++)
+    {
+        printf("%3d",a[i]);
+        s=s+a[i];
+    }
+    av=s/5;
+    printf("\nSum is %d",s);
+    printf("\nAverage is %0.2f",av);
+}
+
+73) /* Write a c program to print max and min number into a given array element*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a[5]={10,20,30,40,50};
+    int i,max=a[0],min=a[0];
+    clrscr();
+    for(i=0;i<5;i++)
+    {
+        printf("%3d",a[i]);
+        if(a[i]>max)
+        {
+            max=a[i];
+        }
+        else if(a[i]<min)
+        {
+            min=a[i];
+        }
+    }
+    printf("\nMin %d",min);
+    printf("\nMax %d",max);
+}
+
+74) /*Write a C program to print the array elements using for loop*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a[100];
+    int i,n;
+    clrscr();
+    printf("Enter number of elements..:");
+    scanf("%d",&n);
+    printf("\nEnter array elements\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("\nElements are..:\n");
+    for(i=0;i<n;i++)
+    {
+        printf("%3d",a[i]);
+    }
+}
+
+76) /* Write a C program to print the elements and perform add and avg of the elements using for loop*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a[100];
+    int i,n,s=0;
+    float av;
+    clrscr();
+    printf("Enter number of elements..:");
+    scanf("%d",&n);
+    printf("\nEnter array elements\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("\nElements are..:\n");
+    for(i=0;i<n;i++)
+    {
+        printf("%3d",a[i]);
+        s=s+a[i];
+    }
+    av=s/n;
+    printf("\nSum is...:%d",s);
+    printf("\nAverage is...:%0.2f",av);
+}
+
+77) /* Write a C program to print the elements in array and find max,min elements in the using for loop*/
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a[100];
+    int i,n,max,min;
+    clrscr();
+    printf("Enter the size of an array..:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    max=a[0];
+    min=a[0];
+    printf("Array elements are\n");
+    for(i=0;i<n;i++)
+    {
+        printf("%3d",a[i]);
+        if(a[i]>max)
+        max=a[i];
+        else if(a[i]<min)
+        min=a[i];
+    }
+    printf("\nMax=%d",max);
+    printf("\nMin=%d",min);
+}
+
+78) /* Write a c program to intialize values in two dimensional array*
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a[3][3]={{10,20,30},{40,50,60},{70,80,90}};
+    int i,j;
+    clrscr();
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        printf("%3d",a[i][j]);
+        printf("\n");
+    }
+}
+
+
+79) /* Write a c program to declare values in two dimensional array*/*****************************************************************************************************
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a[100][100];
+    int i,j,r,c;
+    clrscr();
+    printf("Enter number of rows...:");
+    scanf("%d",&r);
+    printf("Enter number of column...:");
+    scanf("%d",&c);
+    printf("Enter values...\n");
+    for(i=0;i<r;i++);
+    {
+        for(j=0;j<c;j++)
+        scanf("%d",&a[i][j]);
+    }
+    for(i=0;i<r;i++);
+    {
+        for(j=0;j<c;j++)
+        {
+        printf("%3d",a[i][j]);
+        }
+        printf("\n");
+    }
+    
+}
+
+80) /*Write a c program for matrix addition*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+  int a[100][100], b[100][100];
+  int r,c,i,j;
+  clrscr();
+  printf("Enter number of rows for A matrix..:");
+  scanf("%d",&r);
+  printf("Enter number of coulmns for A matrix..:");
+  scanf("%d",&c);
+  for(i=0;i<r;i++)
+    {
+      for(j=0;j<c;j++)
+	  scanf("%d",&a[i][j]);
+	}
+      printf("Enter number of rows for B matrix..:");
+      scanf("%d",&r);
+      printf("Enter number of coulmns for B matrix..:");
+      scanf("%d",&c);
+      for(i=0;i<r;i++)
+	{
+	  for (j=0;j<c;j++)
+	      scanf("%d",&b[i][j]);
+	    }
+	  printf("\nA matrix...:");
+	  printf("\n========================================\n");
+	  for(i=0;i<r;i++)
+	    {
+	      for(j=0;j<c;j++)
+		printf("%3d",a[i][j]);
+	      printf("\n");
+	    }
+        printf("\nB matrix...:");
+        printf("\n========================================\n");
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            printf("%3d",b[i][j]);
+            printf("\n");
+        }
+        printf("\nA+B MAtrix...");
+        printf("\n=============================================\n");
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+                printf("%3d",a[i][j]+b[i][j]);
+                printf("\n");
+            }
+        }
